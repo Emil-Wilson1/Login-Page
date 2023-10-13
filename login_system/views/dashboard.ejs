@@ -1,0 +1,16 @@
+<%- include('header') -%> 
+
+<div class="text-center center-div mt-3" id="login">
+    <div class="container w-25 py-5 mt-5">
+        <h2>Welcome to Home</h2>
+        <h5><%= locals.user ? user : "User" %></h5>
+        <!-- <form action="/route/logout" method="POST">
+                <button>Logout</button>
+        </form> -->
+        
+        <button class="btn btn-primary"><a href="/logout" class="text-decoration-none text-white">Logout</a></button>
+    </div>
+</div>
+
+
+<%- include('footer') -%> 
